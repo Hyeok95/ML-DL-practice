@@ -13,13 +13,13 @@
 * 데이터 모델에 가장 적합한 선을 찾기위해 데이터들의 점을 사용.
 * 링크
 
-<a href="https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/2.%20Linear_Regression.ipynb"></a>
+https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/2.%20Linear_Regression.ipynb
 
 ### 2. 로지스틱 회귀
 * 시그모이드 함수일 때 사용하며, 발생할 사건의 확률을 0부터 1까지의 범위로 표현할 때 값을 변환하기 위한 함수로 사용.
 * 링크
 
-<a href="https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/3.%20Rogistic_Regression.ipynb"></a>
+https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/3.%20Rogistic_Regression.ipynb
 
 
 ### 3. SVM
