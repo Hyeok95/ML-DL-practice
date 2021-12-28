@@ -28,3 +28,6 @@ https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/3.%20Rogistic_Regression.
 
 ### 4. Naive Bayes
 * 데이터가 각 클래스에 속할 특징 확률을 계산하는 조건부 확률 기반의 분류 방법.
+* 링크
+
+https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/Naive_Bayes.ipynb
