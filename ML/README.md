@@ -31,3 +31,9 @@ https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/3.%20Rogistic_Regression.
 * 링크
 
 https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/Naive_Bayes.ipynb
+
+### 5. K-Nearest Neighbor
+* 어떤 데이터가 주어지면 그 주변의 데이터를 살펴본 뒤 더 많은 데이터가 포함되어 있는 범주로 분류하는 방식
+* 링크
+
+https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/K-Nearest-Neighbor.ipynb
