@@ -24,6 +24,9 @@ https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/3.%20Rogistic_Regression.
 
 ### 3. SVM
 * 각 데이터의 점들을 선을 사용해서 구분지으며, 이 선은 데이터의 범주를 구분 지을 수 있는 가장 가까운 2개의 데이터의 점을 기준으로 만들어짐.
+* 링크
+
+https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/SVM.ipynb
 
 
 ### 4. Naive Bayes
