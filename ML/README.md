@@ -45,3 +45,5 @@ https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/K-Nearest-Neighbor.ipynb
 * 변수들로 기준을 만들고 이것을 통하여 샘플을 분류하고 분류된 집단의 성질을 통하여 추정하는 모형. (트리구조)
 * 장점 : 해석력이 높고, 직관적, 범용성
 * 단점 : 높은 변동성, 샘플에 민감함.
+* 링크
+https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/Decision_Tree.ipynb
