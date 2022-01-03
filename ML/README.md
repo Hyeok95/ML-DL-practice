@@ -46,4 +46,24 @@ https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/K-Nearest-Neighbor.ipynb
 * 장점 : 해석력이 높고, 직관적, 범용성
 * 단점 : 높은 변동성, 샘플에 민감함.
 * 링크
+
 https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/Decision_Tree.ipynb
+
+### 🚩앙상블(Ensenble)
+* 여러 개의 기본모델을 활용하여 하나의 새로운 모델을 만들어내는 개념이며 학습방법이 가장 불안정한 의사결정나무에 주로 이용한다.
+* 종류 : Bagging, RandomForest, Boosting(Adaboost, Gradient boosting), Stacking 등이 있다.
+
+#### ☀ Bagging
+* 주어진 자료에서 여러 개의 Bootstrap 자료를 생성하고 각 붓트스랩 자료에 예측모형을 만든 후 결합하여 최종 예측모형을 만드는 방법이다. Voting은 여러 개의 모형으로부터 산출된 결과 중 다수결에 의해서 최종 결과를 선정하는 과정이다.
+* 링크
+
+https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/Ensenble%2001.-%20Bagging.ipynb
+
+#### ☀ Boosting
+* 예측력이 약한 모형들을 결합하여 강한 예측모형을 만드는 방법
+
+#### ☀ RandomForest
+* 여러개의 모델을 다양하게 만들기 위해 데이터와 변수도 재구성하는 방법 (Bagging보다는 성능이 뛰어남)
+* 링크
+
+https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/Ensenble%2002%20-%20Randomforest.ipynb
