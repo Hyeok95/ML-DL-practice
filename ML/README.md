@@ -53,3 +53,9 @@
    * XGBoosting : Regularization term이 추가되어 모델이 과적합 되는것을 방지
    * LightGBM : Xgboost와 다르게 leaf-wise를 loss사용하여 tree의 뿌리를 조금 더 깊게 내릴수 있음.(loss를 더 줄일 수 있음)
    * Catboost : 분산과 편향을 줄이는 기법이며, categorical feature를 수치형으로 변환하는 방법을 사용함. (오픈소스가 다소 부족)
+
+
+## 2) 비지도 학습 알고리즘
+
+* 정의 : 지도 학습과는 달리 정답 라벨이 없는 데이터를 비슷한 특징끼리 군집화 하여 새로운 데이터에 대한 결과를 예측하는 방법
+* 종류 : Clustering,  K Means,  Density Estimatio,n  Exception Maximization,  Pazen Window  DBSCAN
