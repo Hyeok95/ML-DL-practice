@@ -58,4 +58,15 @@
 ## 2) 비지도 학습 알고리즘
 
 * 정의 : 지도 학습과는 달리 정답 라벨이 없는 데이터를 비슷한 특징끼리 군집화 하여 새로운 데이터에 대한 결과를 예측하는 방법
-* 종류 : Clustering,  K Means,  Density Estimatio,n  Exception Maximization,  Pazen Window  DBSCAN
+* 종류 : Clustering,  K Means,  Density Estimation,  Exception Maximization,  Pazen Window  DBSCAN
+
+### 1. 군집분석(Clustering)
+* 각 데이터의 유사성을 측정하여 높은 대상 집단을 분류하고, 군집 간에 상이성을 규명하는 방법
+  * K-means clustering : 데이터의 사용자가 지정한 k개의 군집으로 나눔
+    1. 각 데이터 포인트 i에 대해 가장 가까운 중심점을 찾고, 그 중심점에 해당하는 군집 할당
+    2. 할당된 군집을 기반으로 새로운 중심 계산, 중심점은 군집 내부 점들 좌표의 평균으로 함.
+    3. 각 클러스터의 할당이 바뀌지 않을 때까지 반복
+    4. K-medoids clustering(k-means clusering의 단점을 보완)
+      * 군집의 무게중심을 구하기 위해 데이터의 평균 대신 중간점을 사용(K-meas보다 이상치에 강건한 성능을 보임)
+  * Hierarchical clustering(계층적 군집분석) : 나무 모양의 계층 구조를 형성해 나가는 방법
+  * DBSCAN : k개를 설정할 필요없이 군집화 할 수 있는 방법
