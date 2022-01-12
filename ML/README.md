@@ -62,7 +62,7 @@
 
 ### 1. 군집분석(Clustering)
 * 각 데이터의 유사성을 측정하여 높은 대상 집단을 분류하고, 군집 간에 상이성을 규명하는 방법
-  * K-means clustering : 데이터의 사용자가 지정한 k개의 군집으로 나눔
+  * [K-means clustering](https://github.com/Hyeok95/ML-DL-practice/blob/main/ML/Kmeans_clustering.ipynb) : 데이터의 사용자가 지정한 k개의 군집으로 나눔
     1. 각 데이터 포인트 i에 대해 가장 가까운 중심점을 찾고, 그 중심점에 해당하는 군집 할당
     2. 할당된 군집을 기반으로 새로운 중심 계산, 중심점은 군집 내부 점들 좌표의 평균으로 함.
     3. 각 클러스터의 할당이 바뀌지 않을 때까지 반복
