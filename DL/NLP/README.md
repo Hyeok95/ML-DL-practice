@@ -59,7 +59,7 @@
 
 * Sequence model
 
-<img src="https://github.com/Hyeok95/ML-DL-practice/blob/main/DL/NLP/Image/RNN2.PNG" width="200px">
+<img src="https://github.com/Hyeok95/ML-DL-practice/blob/main/DL/NLP/Image/RNN2.PNG">
 
     1. one to many<br>
 이미지 데이터에서 설명글을 출력함 ex) image captioning
@@ -105,7 +105,7 @@ W(hy) : hiden layer에서 출력(y) 사이의 파라미터<br>
 
 > GRU<br>
 
-<img src="https://github.com/Hyeok95/ML-DL-practice/blob/main/DL/NLP/Image/GRU.PNG" width="200px">
+<img src="https://github.com/Hyeok95/ML-DL-practice/blob/main/DL/NLP/Image/GRU.PNG">
 
 * 기존 LSTM구조를 조금 더 간단하게 개선한 모델입니다.
     - LSTM과 다르게 reset gate, update gate 2개의 gate만을 사용합니다
@@ -113,5 +113,52 @@ W(hy) : hiden layer에서 출력(y) 사이의 파라미터<br>
     - update gate : 과거와 현재의 정보를 가각 얼마나 반영할지에 대한 비율을 구함.
 
 
+## 4. Transformer
+> 시퀀스-투-시퀀스(Sequence-to-Sequence)
 
+* 입력된 시퀀스로부터 다른 도메인의 시퀀스를 출력하는 다양한 분야에서 사용되는 모델
+- 단점
+1. 하나의 고정된 크기의 벡터에 모든 정보를 압축하려고 하니까 정보 손실이 발생합니다.
+2. RNN의 고질적인 문제인 기울기 소실(vanishing gradient) 문제가 존재합니다.
+
+> Attention<br>
+* 디코더에서 출력 단어를 예측하는 매 시점(time step)마다, 인코더에서의 전체 입력 문장을 다시 한 번 참고한다는 점
+Attention(Q, K, V) = Attention Value<br>
+Q = Query : t 시점의 디코더 셀에서의 은닉 상태<br>
+K = Keys : 모든 시점의 인코더 셀의 은닉 상태들<br>
+V = Values : 모든 시점의 인코더 셀의 은닉 상태들<br>
+쿼리(Query)'에 대해서 모든 '키(Key)'와의 유사도를 각각 구합니다. 그리고 구해낸 이 유사도를 키와 맵핑되어있는 각각의 '값(Value)'에 반영해줍니다.
+
+* **Scaled dot-product Attention(스케일드 닷-프로덕트 어텐션)**<br>
+함수를 사용하는 어텐션을 어텐션 챕터에서 배운 닷-프로덕트 어텐션(dot-product attention)에서 값을 스케일링하는 것을 추가
+
+- **Multi-head Attention** <br>
+h개의 각각 다르게 초기화된 parameter matrix를 곱하여 h개의 어텐션 결과를 얻고 이를 concat한 다음 다른 weight matrix를 곱하여 최종적인 어텐션 값을 출력
+
+- **Positional Encoding** <br>
+트랜스포머는 단어를 순차적으로 받는 것이 아니라 병렬적으로 처리합니다. 하지만 layer를 통과하면서 위치에 대한 정보가 없다면 단어의 위치에 대한 고려를 할 수 없을 것이고, 이를 위해 첫 인코딩 레이어를 통과하기 전 positional encoding을 해줍니다.
+
+
+> Transformer<br>
+* 기존의 seq2seq의 구조인 인코더-디코더를 따르면서도, 논문의 이름처럼 어텐션(Attention)만으로 구현한 모델
+
+> BERT(Bidirectional Encoder Representations from Transformers)
+ * 문장 중간에 빈칸을 만들고 해당 빈칸에 어떤 단어가 적절할지 맞추는 과정에서 프리트레인합니다. (양방향)
+
+- ** 마스크드 언어 모델(Masked Language Model, MLM)** <br>
+80%의 단어들은 [MASK]로 변경한다. <br>
+Ex) The man went to the store → The man went to the [MASK] <br>
+10%의 단어들은 랜덤으로 단어가 변경된다. <br>
+Ex) The man went to the store → The man went to the dog <br>
+10%의 단어들은 동일하게 둔다. <br>
+Ex) The man went to the store → The man went to the store <br>
+
+- **다음 문장 예측(Next Sentence Prediction, NSP)**
+
+> GPT <br>
+* 이전 단어들이 주어졌을 때 다음 단어가 무엇인지 맞추는 과정에서 프리트레인(pretrain)합니다 (단방향)
+
+* **차이** <br>
+1. GPT는 문장 생성에, BERT는 문장의 의미를 추출하는 데 강점을 지닌 것으로 알려져 있습니다.
+2. BERT는 트랜스포머에서 인코더(encoder), GPT는 트랜스포머에서 디코더(decoder)만 취해 사용한다는 점
 
