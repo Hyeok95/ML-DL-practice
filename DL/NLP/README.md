@@ -61,11 +61,11 @@
 
 <img src="https://github.com/Hyeok95/ML-DL-practice/blob/main/DL/NLP/Image/RNN2.PNG">
 
-    1. one to many<br>
+1. one to many<br>
 이미지 데이터에서 설명글을 출력함 ex) image captioning
-    2. many to one<br> 
+2. many to one<br> 
 텍스트에서 감정이나 부정적 분류, 최근 날씨에 따른 향후 날씨 예측 ex) sentiment, 시계열 예측<br>
-    3. many to many<br>
+3. many to many<br>
 영어문장을 한글로 번역, 영상 프레임별로 예측 ex)sequnce of words, vidio calssification
 
 * RNN의 과정
@@ -145,7 +145,7 @@ h개의 각각 다르게 초기화된 parameter matrix를 곱하여 h개의 어�
 > BERT(Bidirectional Encoder Representations from Transformers)
  * 문장 중간에 빈칸을 만들고 해당 빈칸에 어떤 단어가 적절할지 맞추는 과정에서 프리트레인합니다. (양방향)
 
-- ** 마스크드 언어 모델(Masked Language Model, MLM)** <br>
+- **마스크드 언어 모델(Masked Language Model, MLM)** <br>
 80%의 단어들은 [MASK]로 변경한다. <br>
 Ex) The man went to the store → The man went to the [MASK] <br>
 10%의 단어들은 랜덤으로 단어가 변경된다. <br>
